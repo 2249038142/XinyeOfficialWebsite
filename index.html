@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>welcome! xinye</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/indexTB.css" type="text/css">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="fonts/font_1090203_vwb70lzetrn/iconfont.css" type="text/css" />
+    <link rel="stylesheet" href="css/signIn.css" type="text/css" />
+</head>
+
+<body>
+
+    <div id="head">
+        <div class="tbCenter">
+            <h3 class="logo"></h3>
+            <ul class="guide">
+                <li><a href="index.html">首页</a></li>
+                <li class="interval"></li>
+                <li class="short"><a href="show.html">案例欣赏</a></li>
+                <li class="interval"></li>
+                <li><a href="Contact.html">联系与反馈</a></li>
+            </ul>
+            <!-- 未登录前的状态 -->
+            <div class="user_before">
+                <i class="iconfont icon-icontouxiang"></i> <a href="javascript:;"> 登录</a>
+                <a href="javascript:;"> 注册</a>
+            </div> 
+            <!-- 登录后的状态 
+            <div class="user_after" id="downBlock">
+                <i class="iconfont icon-icontouxiang"></i>
+                
+                <a>deng</a>
+
+                <div class="select">
+                    <ul>
+                        <li><a href="Psetting.html">签到</a></li>
+                        <li>退出账号</li>
+                    </ul>
+                </div>
+            </div> -->
+            <script src="js/downblock.js"> </script>
+        </div>
+    </div>
+    <div class="user hide">
+        <div class="user-list">
+            <form id="form1" action="" method="post">
+                <h3>登陆</h3>
+                <ul>
+                    <li><label>用户名</label><input type="text" name="username" id="username" placeholder="昵称或邮箱" /></li>
+                    <li><label>密码</label><input type="password" name="pass" id="pass" placeholder="6-20位密码" /></li>
+                    <li><label>验证码</label><input class="half" type="text" />
+                        <img src="./imgs/2.jpg" alt=""></a>
+                    </li>
+                    <div class="buttons">
+                        <a class="onbutton"><button type="submit" id="onsubmit">登录</button></a>
+                        <a class="openbutton"><button type="button" id="getform2">注册</button></a>
+                    </div>
+                </ul>
+            </form>
+            <form class="hide" id="form2" action="" method="post">
+                <h3>注册</h3>
+                <ul>
+                    <li><label>用户名</label><input type="text" name="username" class="getusername" />
+                        <div class='tips'>用户名长度在10个字符以内</div>
+                    </li>
+                    <li><label>邮箱</label><input type="text" name="username" class="getEmail" />
+                        <div class='tips'>请检查邮箱格式</div>
+                    </li>
+
+                    <li><label>密码</label><input type="password" name="pass" class="getpass" />
+                        <div class='tips'>请输入6-20位密码(必须有大小写及数字)</div>
+                    </li>
+                    <li><label>验证码</label><input class="half" type="text" />
+                        <div class='tips'>请再次输入验证码</div>
+                        <a href="javascript:;" class="getbutton1"><input type="button" value="邮箱验证"></a>
+                        </a>
+                    </li>
+                    <div class="buttons">
+                        <a href="javascript:;" class="getbutton"><button type="button" id="getsubmit">提交注册</button></a>
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <div class="loginSuc hide">
+            <img src="imgs/勾.png" alt="">
+            <p> <em></em> 成功！</p>
+            <p><em></em> 秒后返回</p>
+        </div>
+    </div>
+    <!-- 中间部分开始 -->
+    <!-- 轮播图部分 -->
+    <div id="center">
+        <div class="carousel">
+            <ul>
+                <span class="iconfontarr prev">&#xe600;</span>
+                <span class="iconfontarr next">&#xe601;</span>
+                <li class="now"><img src="imgs/首页-封面.png" alt=""></li>
+                <li class="after"><img src="imgs/首页-封面2.png" alt=""></li>
+                <li><img src="imgs/首页-封面3.png" alt=""></li>
+                <li><img src="imgs/2.jpg" alt=""></li>
+                <li><img src="imgs/3.jpg" alt=""></li>
+                <li class="before"><img src="imgs/2.jpg" alt=""></li>
+            </ul>
+            <div class="lines">
+                <div class="active-line line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <!-- 宣传图部分 -->
+        <div class="imgs">
+            <figure>
+                <img src="imgs/xc1.jpg" width="100%" height="300px">
+                <figcaption>
+                    <div class="text">
+                        <h1>我们有贴心的设计</h1>
+                        <h2>竭尽所能为您提供想要的设计</h2>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="middle">
+                <img src="imgs/xc2.jpg" width="100%" height="300px">
+                <figcaption>
+                    <div class="text">
+                        <h1>我们有优秀的团队</h1>
+                        <h2>准时完成您下达的任务</h2>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="imgs/xc3.jpg" width="100%" height="300px">
+                <figcaption>
+                    <div class="text">
+                        <h1>我们有优质的服务</h1>
+                        <h2>为您答疑解惑，并定期为您维护</h2>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- 大图部分 -->
+        <div class="composition">
+            <div class="title">
+                <h1>新叶工作室竭诚为您服务</h1>
+                <h2>打破时间空间限制，带您零距离了解我室</h2>
+            </div>
+            <div class="c_block">
+                <ul class="fl">
+                    <li class="top"><img src="imgs/who旁边的红色.png" alt="">
+                        <p>what-我们都由什么组成</p>
+                    </li>
+                    <li class="lis">
+                        <img src="imgs/工具-红.png" alt="">
+                        <div class="ps">
+                            <p>出色的前端与后台管理</p>
+                            <p class="bottom">三名前端与三名后台人员，保证您的网页快速制作完成</p>
+                        </div>
+                    </li>
+                    <li class="lis">
+                        <img src="imgs/设计-红.png" alt="">
+                        <div class="ps">
+                            <p>优秀的设计</p>
+                            <p class="bottom">为您设计出理想的网页图</p>
+                        </div>
+                    </li>
+                    <li class="lis">
+                        <img src="imgs/齿轮-红.png" alt="">
+                        <div class="ps">
+                            <p>优质的服务态度</p>
+                            <p class="bottom">即使以后您有什么疑问，我们也会向您提供解答</p>
+                        </div>
+                    </li>
+                    <li class="lis">
+                        <img src="imgs/灯泡-红.png" alt="" class="light">
+                        <div class="ps">
+                            <p>优质的服务态度</p>
+                            <p class="bottom">即使以后您有什么疑问，我们也会向您提供解答</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="bottom">
+        <div class="guide_bottom">
+            <h3 class="logo_bottom">
+                <p class="fr">xinye</p>
+            </h3>
+            <ul class="left">
+                <li class="title">客户指南</li>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">案例欣赏</a></li>
+                <li><a href="javascript:;">联系与反馈</a></li>
+            </ul>
+            <div class="bInterval"></div>
+            <ul class="right">
+                <li class="title">联系我们</li>
+                <li>电话：18390097825</li>
+                <li>邮箱：1162968700@qq.com</li>
+                <li>公众号：新叶网络工作室</li>
+                <li>地址：湖南省常德市武陵区凤天宾馆旁</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 版权部分 -->
+    <div id="copyright">copyright©Xinye|版权所有©新叶工作室</div>
+
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</html>

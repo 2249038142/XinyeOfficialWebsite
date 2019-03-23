@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/indexTB.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/signIn.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/font_1090203_vwb70lzetrn/iconfont.css" type="text/css" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ylLAceGkoBGNadunbBNL5WMh9QRzjWfD"></script>
+    <title>联系与反馈</title>
+</head>
+
+<body>
+
+    <div id="head">
+        <div class="tbCenter">
+            <h3 class="logo"></h3>
+            <ul class="guide">
+                <li><a href="index.html">首页</a></li>
+                <li class="interval"></li>
+                <li class="short"><a href="show.html">案例欣赏</a></li>
+                <li class="interval"></li>
+                <li><a href="Contact.html">联系与反馈</a></li>
+            </ul>
+             <!-- 未登录前的状态 -->
+            <!-- <div class="user_before">
+                <i class="iconfont icon-icontouxiang"></i> <a href="javascript:;"> 登录</a>
+                <a href="javascript:;"> 注册</a>
+            </div>  -->
+            <!-- 登录后的状态 -->
+            <div class="user_after" id="downBlock">
+                <i class="iconfont icon-icontouxiang"></i>
+                <a>deng</a>
+
+                <div class="select">
+                    <ul>
+                        <li><a href="Psetting.html">签到</a></li>
+                        <li>退出账号</li>
+                    </ul>
+                </div>
+            </div>
+            <script src="js/downblock.js"> </script>
+        </div>
+    </div>
+     <div class="user hide">
+        <div class="user-list">
+            <form id="form1" action="" method="post">
+                <h3>登陆</h3>
+                <ul>
+                    <li><label>用户名</label><input type="text" name="username" id="username" placeholder="昵称或邮箱" /></li>
+                    <li><label>密码</label><input type="password" name="pass" id="pass" placeholder="6-20位密码" /></li>
+                    <li><label>验证码</label><input class="half" type="text" />
+                        <img src="./imgs/2.jpg" alt=""></a>
+                    </li>
+                    <div class="buttons">
+                        <a class="onbutton"><button type="submit" id="onsubmit">登录</button></a>
+                        <a class="openbutton"><button type="button" id="getform2">注册</button></a>
+                    </div>
+                </ul>
+            </form>
+            <form class="hide" id="form2" action="" method="post">
+                <h3>注册</h3>
+                <ul>
+                    <li><label>用户名</label><input type="text" name="username" class="getusername" />
+                        <div class='tips'>用户名长度在10个字符以内</div>
+                    </li>
+                    <li><label>邮箱</label><input type="text" name="username" class="getEmail" />
+                        <div class='tips'>请检查邮箱格式</div>
+                    </li>
+
+                    <li><label>密码</label><input type="password" name="pass" class="getpass" />
+                        <div class='tips'>请输入6-20位密码(必须有大小写及数字)</div>
+                    </li>
+                    <li><label>验证码</label><input class="half" type="text" />
+                        <div class='tips'>请再次输入验证码</div>
+                        <a href="javascript:;" class="getbutton1"><input type="button" value="邮箱验证"></a>
+                        </a>
+                    </li>
+                    <div class="buttons">
+                        <a href="javascript:;" class="getbutton"><button type="button" id="getsubmit">提交注册</button></a>
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <div class="loginSuc hide">
+            <img src="imgs/勾.png" alt="">
+            <p> <em></em> 成功！</p>
+            <p><em></em> 秒后返回</p>
+        </div>
+    </div>
+    <div id="center">
+        <div id="main">
+            <div class="c-us">
+                <h2><span class="rBlock"></span>联系我们</h2>
+                <ul>
+                    <li><i class="iconfont">&#xeb8f;</i>17873676302</li>
+                    <li class="amap"><i class="iconfont">&#xe63c;</i>湖南省常德市武陵区芙蓉路凤天宾馆旁育苗幼儿园进去...</li>
+                    <li><i class="iconfont">&#xe6ac;</i>1162968700@qq.com</li>
+                    <li><i class="iconfont">&#xe642;</i>18390097825</li>
+                    <li><i class="iconfont">&#xe637;</i>1162968700</li>
+                </ul>
+                <img src="./imgs/地图.png" alt="地图" class="map">
+                <div id="allmap" class="Map"></div>
+                <div class="close"><i class="iconfont">&#xe629;</i></div>
+
+            </div>
+
+            <div class="leave">
+                <h2><span class="rBlock"></span>反馈留言</h2>
+                <form action="" id="user1">
+                    <p class="p-name">您的称呼</p>
+                    <p class="p-phone">联系方式</p>
+                    <input type="text" name="name" class="name">
+                    <input type="text" name="phone" class="phone">
+                    <textarea name="advice" class="advice" placeholder="请于此留言您想反馈的建议"></textarea>
+                    <button class="btn">提交</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="bottom">
+        <div class="guide_bottom">
+            <h3 class="logo_bottom">
+                <p class="fr">xinye</p>
+            </h3>
+            <ul class="left">
+                <li class="title">客户指南</li>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">案例欣赏</a></li>
+                <li><a href="javascript:;">联系与反馈</a></li>
+            </ul>
+            <div class="bInterval"></div>
+            <ul class="right">
+                <li class="title">联系我们</li>
+                <li>电话：18390097825</li>
+                <li>邮箱：1162968700@qq.com</li>
+                <li>公众号：新叶网络工作室</li>
+                <li>地址：湖南省常德市武陵区凤天宾馆旁</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 版权部分 -->
+    <div id="copyright">copyright©Xinye|版权所有©新叶工作室</div>
+
+</body>
+<script src="js/contact.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</html>

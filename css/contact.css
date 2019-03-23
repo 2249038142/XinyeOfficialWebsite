@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font_ylvukhak7mp/iconfont.eot');
+    src: url('../fonts/font_ylvukhak7mp/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font_ylvukhak7mp/iconfont.woff2') format('woff2'), url('../fonts/font_ylvukhak7mp/iconfont.woff') format('woff'), url('../fonts/font_ylvukhak7mp/iconfont.ttf') format('truetype'), url('../fonts/font_ylvukhak7mp/iconfont.svg#iconfont') format('svg');
+}
+
+#main .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 40px!important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#main {
+    width: 1200px;
+    height: 1500px;
+    background: #f0f3ef;
+}
+
+span.rBlock {
+    display: block;
+    width: 6px;
+    height: 30px;
+    background: #c45b3f;
+    margin: 10px 10px 0 0;
+    float: left;
+}
+
+.c-us {
+    width: 1130px;
+    height: 530px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 140px;
+}
+
+.c-us h2 {
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 50px;
+    color: #000;
+    opacity: 0.8;
+    background: linear-gradient(to right, #fff, #f0f3ef);
+}
+
+.c-us ul {
+    float: left;
+    position: absolute;
+    top: 185px;
+    left: 0;
+    margin: 30px 0 0 100px;
+    z-index: 1;
+}
+
+.c-us ul li {
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.c-us ul li:hover {
+    color: #da5732;
+}
+
+.c-us ul li i {
+    float: left;
+    padding-right: 30px;
+}
+
+.map {
+    width: 1000px;
+    height: 520px;
+    position: absolute;
+    left: 0;
+    z-index:0;
+}
+
+.Map {
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 400px;
+    width: 780px;
+    height: 500px;
+    transition: all 0.2s;
+    z-index: 2;
+}
+
+.close {
+    position: absolute;
+    left: 1135px;
+    top: 151px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.2s;
+    display: none;
+}
+
+.leave {
+    width: 1130px;
+    height: 650px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.leave h2 {
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 50px;
+    color: #000;
+    opacity: 0.8;
+    background: linear-gradient(to right, #fff, #f0f3ef);
+}
+
+#user1 {
+    float: left;
+    margin: 10px 0 0 60px;
+    width: 840px;
+    height: 550px;
+    position: relative;
+    background: linear-gradient(to right, #e9e9e9, #f0f3ef);
+}
+
+#user1 input {
+    position: absolute;
+    border: none;
+    outline: none;
+    left: 30px;
+    font-size: 15px;
+    text-indent: 85px;
+}
+
+.name,
+.phone {
+    width: 360px;
+    height: 45px;
+}
+
+.name {
+    top: 20px;
+}
+
+.phone {
+    position: absolute;
+    top: 80px;
+}
+
+.advice {
+    position: absolute;
+    top: 150px;
+    width: 720px;
+    height: 300px;
+    border: none;
+    outline: none;
+    left: 30px;
+    resize: none;
+    font-size: 1.8rem;
+    padding: 10px 0 0 5px;
+}
+
+.leave .btn {
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 55px;
+    top: 477px;
+    left: 320px;
+    background: #c45b3f;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.p-name {
+    position: absolute;
+    top: 31px;
+    left: 40px;
+    z-index: 1;
+    color: #474747;
+}
+
+.p-phone {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    z-index: 1;
+    color: #474747;
+}

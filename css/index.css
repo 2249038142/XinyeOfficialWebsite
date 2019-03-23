@@ -1,0 +1,253 @@
+
+/* 头部结束 */
+
+
+/* 轮播部分开始 */
+
+.carousel {
+    width: 1100px;
+    margin: 100px auto;
+    padding-top: 130px;
+}
+
+.carousel ul {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    min-height: 300px;
+    margin-bottom: 40px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 44%;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0
+}
+
+.carousel ul li {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 250px;
+    right: 250px;
+    transition: all .3s ease;
+    /* opacity: 0; */
+}
+
+.carousel li img {
+    width: 100%;
+    height: 100%;
+}
+
+.now {
+    /*  height: 300px;
+    width: 730px;*/
+    z-index: 1;
+    opacity: 1;
+    transform: scale3d(1.0, 1.2, 1.2)
+}
+
+.before {
+    /*left: 0;*/
+    z-index: 0;
+    transform: translateX(-250px);
+    opacity: .4;
+}
+
+.after {
+    /*left: 500px;*/
+    z-index: 0;
+    transform: translateX(250px);
+    opacity: .4;
+}
+
+.lines {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 20px;
+    height: 4px;
+    background-color: black;
+    margin: 10px 10px;
+}
+
+.active-line {
+    background-color: red;
+}
+
+
+/* 轮播结束 */
+
+.imgs {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imgs figure {
+    width: 30%;
+    display: inline-block;
+    /* margin-right: 50px; */
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.imgs figure:hover {
+    box-shadow: 0 4px 10px rgba(0, 39, 36, 0.1);
+    -moz-transform: translate(0, -2px);
+    -o-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+}
+
+.imgs .middle {
+    margin: 0 40px;
+}
+
+.imgs figcaption {
+    width: 100%;
+    height: 110px;
+    background: #f7f7f7;
+    position: relative;
+}
+
+figcaption .text {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+figcaption h1 {
+    color: black;
+    font-size: 1.6rem;
+    line-height: 20px;
+    text-align: center;
+}
+
+figcaption h2 {
+    text-align: center;
+    color: #b8b8b8;
+    font-size: 1.4rem;
+}
+
+
+/* 大图开始 */
+
+.composition {
+    width: 100%;
+    height: 920px;
+    background: #eaeaea;
+    margin-top: 200px;
+    transition: all .5s;
+}
+
+.composition .title {
+    width: 480px;
+    height: 70px;
+    margin: 0 auto;
+    /* margin-top: 90px; */
+    padding-top: 90px;
+}
+
+.title h1 {
+    width: 480px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #c45b3f;
+    text-align: center;
+    border-bottom: 1px solid #c45b3f;
+}
+
+.title h2 {
+    width: 480px;
+    height: 29px;
+    font-size: 1.5rem;
+    line-height: 29px;
+    font-weight: normal;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+div.c_block {
+    width: 90%;
+    height: 470px;
+    margin: 0 auto;
+    margin-top: 75px;
+    background: url(../imgs/电脑.png) no-repeat right center;
+    background-size: 620px 450px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.c_block ul {
+    width: 470px;
+    height: 470px;
+    /* background: skyblue; */
+}
+
+.c_block .top {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.c_block .top img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.c_block .top p {
+    padding-left: 20px;
+}
+
+.c_block .lis {
+    height: 66px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.c_block .lis img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.c_block .lis .light {
+    transform: translate(-15px, -40px);
+}
+
+.c_block .ps {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+}
+
+.c_block .ps .bottom {
+    margin-top: 5px;
+    color: #c4c4c4;
+    font-size: 1.4rem;
+}
+
+
+/* 尾部开始 */

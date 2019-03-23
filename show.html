@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新叶网络案例欣赏</title>
+    <link rel="stylesheet" href="css/show.css" type="text/css" />
+    <link rel="stylesheet" href="css/indexTB.css" type="text/css" />
+    <link rel="stylesheet" href="css/signIn.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/font_1090203_vwb70lzetrn/iconfont.css" type="text/css" />
+</head>
+
+<body>
+    <div id="head">
+        <div class="tbCenter">
+            <h3 class="logo"></h3>
+            <ul class="guide">
+                <li><a href="index.html">首页</a></li>
+                <li class="interval"></li>
+                <li class="short"><a href="show.html">案例欣赏</a></li>
+                <li class="interval"></li>
+                <li><a href="Contact.html">联系与反馈</a></li>
+            </ul>
+            <!-- 未登录前的状态 -->
+            <div class="user_before">
+                <i class="iconfont icon-icontouxiang"></i> <a href="javascript:;"> 登录</a>
+                <a href="javascript:;"> 注册</a>
+            </div>
+            <!-- 登录后的状态 -->
+            <!-- <div class="user_after" id="downBlock">
+                <i class="iconfont icon-icontouxiang"></i>
+                <a>deng</a>
+
+                <div class="select">
+                    <ul>
+                        <li><a href="Psetting.html">签到</a></li>
+                        <li>退出账号</li>
+                    </ul>
+                </div>
+            </div>
+            <script src="js/downblock.js"> </script> -->
+        </div>
+    </div>
+    <div class="user hide">
+        <div class="user-list">
+            <form id="form1" action="" method="post">
+                <h3>登陆</h3>
+                <ul>
+                    <li><label>用户名</label><input type="text" name="username" id="username" placeholder="昵称或邮箱" /></li>
+                    <li><label>密码</label><input type="password" name="pass" id="pass" placeholder="6-20位密码" /></li>
+                    <li><label>验证码</label><input class="half" type="text" />
+                        <img src="./imgs/2.jpg" alt=""></a>
+                    </li>
+                    <div class="buttons">
+                        <a class="onbutton"><button type="submit" id="onsubmit">登录</button></a>
+                        <a class="openbutton"><button type="button" id="getform2">注册</button></a>
+                    </div>
+                </ul>
+            </form>
+            <form class="hide" id="form2" action="" method="post">
+                <h3>注册</h3>
+                <ul>
+                    <li><label>用户名</label><input type="text" name="username" class="getusername" />
+                        <div class='tips'>用户名长度在10个字符以内</div>
+                    </li>
+                    <li><label>邮箱</label><input type="text" name="username" class="getEmail" />
+                        <div class='tips'>请检查邮箱格式</div>
+                    </li>
+
+                    <li><label>密码</label><input type="password" name="pass" class="getpass" />
+                        <div class='tips'>请输入6-20位密码(必须有大小写及数字)</div>
+                    </li>
+                    <li><label>验证码</label><input class="half" type="text" />
+                        <div class='tips'>请再次输入验证码</div>
+                        <a href="javascript:;" class="getbutton1"><input type="button" value="邮箱验证"></a>
+                        </a>
+                    </li>
+                    <div class="buttons">
+                        <a href="javascript:;" class="getbutton"><button type="button" id="getsubmit">提交注册</button></a>
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <div class="loginSuc hide">
+            <img src="imgs/勾.png" alt="">
+            <p> <em></em> 成功！</p>
+            <p><em></em> 秒后返回</p>
+        </div>
+    </div>
+    <div class="lastShow">
+        <div class="showPic">
+            <!--侧边栏-->
+            <div class="left-year">
+                <nav>
+                    <ul class="mcd-menu">
+                        <li class="showA">
+                            <a href="javascript:;">
+                                <strong>往年案例欣赏</strong>
+                                <small>Works Show</small>
+                            </a>
+                        </li>
+                        <li class="leftNav">
+                            <a href="javascript:;" class="active">
+                                <strong>2018年</strong>
+                                <small>True blue will never stain</small>
+                            </a>
+                        </li>
+                        <li class="leftNav">
+                            <a href="javascript:;">
+                                <strong>2017年</strong>
+                                <small>sweet home</small>
+                            </a>
+                        </li>
+                        <li class="leftNav">
+                            <a href="javascript:;">
+                                <strong>2016年</strong>
+                                <small>Practice makes perfect</small>
+                            </a>
+                        </li>
+                        <li class="leftNav">
+                            <a href="javascript:;">
+                                <strong>2015年</strong>
+                                <small>Diamond cut diamond</small>
+                            </a>
+                        </li>
+                        <li class="leftNav">
+                            <a href="javascript:;">
+                                <strong>2014年</strong>
+                                <small>Teach fish to swim</small>
+                            </a>
+                        </li>
+                        <li class="leftNav">
+                            <a href="javascript:;">
+                                <strong>2010-2013年</strong>
+                                <small>Great minds think alike</small>
+                            </a>
+                            <ul>
+                                <li><a href="javascript:;">2010年</a></li>
+                                <li><a href="javascript:;">2011年</a> </li>
+                                <li><a href="javascript:;">2012年</a></li>
+                                <li><a href="javascript:;">2013年</a></li>
+                            </ul>
+                        </li>
+                        <li class="search">
+                            <a href="javascript:;">
+                                <input type="text" placeholder="搜索项目...">
+                                <button type="button" alt=""><i class="iconfont icon-sousuo"></i></button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="topPic">
+                <div class="tP">
+                    <img src="./imgs/QQ20180507-0.jpg" alt="">
+                    <img class="hide" src="./imgs/QQ20180515-3.jpg" alt="">
+                </div>
+                <div class="tP">
+                    <img src="./imgs/QQ20180515-0.jpg" alt="">
+                    <img class="hide" src="./imgs/QQ20181213-8.jpg" alt="">
+                </div>
+                <div class="tP">
+                    <img src="./imgs/QQ20180515-1.jpg" alt="">
+                    <img class="hide" src="./imgs/QQ20180515-4.jpg" alt="">
+                </div>
+            </div>
+            <div class="bottomPic">
+                <div class="bP">
+                    <img src="imgs/img1.jpg" alt="">
+                    <img class="hide" src="./imgs/IMG_0078.jpg" alt="">
+                </div>
+                <div class="bP">
+                    <img src="./imgs/2018-08-25 100513.jpg" alt="">
+                    <img class="hide" src="./imgs/2018-08-25 153005(1).jpg" alt="">
+                </div>
+            </div>
+
+            <a href="javascript:;" class="arrow arrow_left"> </a>
+            <a href="javascript:;" class="arrow arrow_right"> </a>
+ <div id="pagination">
+                <!--后面会在JS中动态追加 ，此处为了，实现前端效果，所以注释 
+                <a class="banBtn pageItem" id="prevBtn">&lt;</a>
+                <a class="active2 pageItem" id="first">1</a>
+                <a href="#" class="pageItem">2</a>
+                <a href="#" class="pageItem">3</a>
+                <a href="#" class="pageItem">4</a>
+                <span class="over">...</span>
+                <a href="#" class="pageItem" id="last">10</a>
+                <a href="#" class="pageItem" id="nextBtn">&gt;</a>
+-->
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <h1 class="logo_bottom">
+            <p class="fr">xinye</p>
+        </h1>
+        <div class="guide_bottom">
+            <ul class="left">
+                <li class="title">客户指南</li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">案例欣赏</a></li>
+                <li><a href="Contact.html">联系与反馈</a></li>
+                <li class="interval"></li>
+            </ul>
+            <ul class="right">
+                <li class="title">联系我们</li>
+                <li>QQ：853012241</li>
+                <li>电话：12345678</li>
+                <li>邮箱：853012241@qq.com</li>
+                <li>地址：湖南省常德市武陵区凤天宾馆旁</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 版权部分 -->
+    <div id="copyright">copyright©Xinye|版权所有©新叶工作室</div>
+    <script type="text/javascript" src="js/show.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+
+</body>
+
+</html>
